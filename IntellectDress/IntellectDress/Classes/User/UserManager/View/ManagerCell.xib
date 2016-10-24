@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="managerCell" rowHeight="47" id="aUQ-IO-h0G" customClass="ManagerCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aUQ-IO-h0G" id="cvJ-Ds-jBd">
+                <frame key="frameInset" width="375" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addfriend" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-UJ-pLz">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WF5-7S-3JU"/>
+                            <constraint firstAttribute="width" constant="21" id="ync-fs-E7o"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jimmy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-B6-hGc">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnT-U5-m8S">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="axL-6a-0tA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圆角矩形1拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="WdV-BC-K7w"/>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MnT-U5-m8S" firstAttribute="centerY" secondItem="GnA-B6-hGc" secondAttribute="centerY" id="5UE-1F-vcr"/>
+                    <constraint firstItem="WdV-BC-K7w" firstAttribute="leading" secondItem="MnT-U5-m8S" secondAttribute="trailing" constant="146" id="Bos-uT-NCl"/>
+                    <constraint firstAttribute="trailing" secondItem="WdV-BC-K7w" secondAttribute="trailing" constant="23" id="K4n-dG-gGm"/>
+                    <constraint firstItem="GnA-B6-hGc" firstAttribute="leading" secondItem="PSC-UJ-pLz" secondAttribute="trailing" constant="15" id="RNk-oi-Cal"/>
+                    <constraint firstItem="PSC-UJ-pLz" firstAttribute="leading" secondItem="cvJ-Ds-jBd" secondAttribute="leading" constant="23" id="USO-M5-mIQ"/>
+                    <constraint firstItem="PSC-UJ-pLz" firstAttribute="centerY" secondItem="cvJ-Ds-jBd" secondAttribute="centerY" id="ZIB-G9-hhE"/>
+                    <constraint firstItem="GnA-B6-hGc" firstAttribute="centerY" secondItem="PSC-UJ-pLz" secondAttribute="centerY" id="q5l-x8-pGY"/>
+                    <constraint firstItem="WdV-BC-K7w" firstAttribute="centerY" secondItem="cvJ-Ds-jBd" secondAttribute="centerY" id="xWO-dF-w8T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="managerJobLabel" destination="MnT-U5-m8S" id="cOW-Pi-Hv4"/>
+                <outlet property="managerNameLabel" destination="GnA-B6-hGc" id="cUu-ON-fyJ"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="-118"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addfriend" width="20" height="19"/>
+        <image name="圆角矩形1拷贝" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="maxViewCell" rowHeight="104" id="MbC-UL-oVu" customClass="MaxViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MbC-UL-oVu" id="o1v-WW-EUk">
+                <frame key="frameInset" width="375" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="进店最高" translatesAutoresizingMaskIntoConstraints="NO" id="S0T-3j-e8r">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="JCR-Ut-7Lv"/>
+                            <constraint firstAttribute="height" constant="18" id="zqV-SY-3vg"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="经过最高" translatesAutoresizingMaskIntoConstraints="NO" id="gCw-0B-UVM"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分割线1" translatesAutoresizingMaskIntoConstraints="NO" id="veD-vc-BBJ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Fh1-Oa-rl1"/>
+                            <constraint firstAttribute="width" constant="1" id="ceg-So-4rb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5568" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-BH-DDh">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vS-WN-a4M">
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8569" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tl7-WY-WSF">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRS-ZP-Qf3">
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00~20:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMV-3m-EVu">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00~18:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G57-0q-5DU">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G57-0q-5DU" firstAttribute="top" secondItem="fKf-BH-DDh" secondAttribute="bottom" constant="4" id="09B-at-DAA"/>
+                    <constraint firstItem="fKf-BH-DDh" firstAttribute="top" secondItem="S0T-3j-e8r" secondAttribute="bottom" constant="8" id="5YJ-xd-djE"/>
+                    <constraint firstItem="gCw-0B-UVM" firstAttribute="centerY" secondItem="S0T-3j-e8r" secondAttribute="centerY" id="8Zj-qg-O3R"/>
+                    <constraint firstItem="DRS-ZP-Qf3" firstAttribute="leading" secondItem="Tl7-WY-WSF" secondAttribute="trailing" constant="1" id="Dls-xc-4ji"/>
+                    <constraint firstItem="RMV-3m-EVu" firstAttribute="leading" secondItem="Tl7-WY-WSF" secondAttribute="leading" id="Eua-w3-eaO"/>
+                    <constraint firstItem="veD-vc-BBJ" firstAttribute="centerX" secondItem="o1v-WW-EUk" secondAttribute="centerX" id="Hhj-vX-Ccq"/>
+                    <constraint firstItem="veD-vc-BBJ" firstAttribute="leading" secondItem="S0T-3j-e8r" secondAttribute="trailing" constant="60" id="Kd6-rN-EMf"/>
+                    <constraint firstItem="veD-vc-BBJ" firstAttribute="centerY" secondItem="o1v-WW-EUk" secondAttribute="centerY" id="Kpf-lS-iWe"/>
+                    <constraint firstItem="fKf-BH-DDh" firstAttribute="leading" secondItem="S0T-3j-e8r" secondAttribute="trailing" constant="-51" id="THG-f4-Z16"/>
+                    <constraint firstItem="Tl7-WY-WSF" firstAttribute="leading" secondItem="gCw-0B-UVM" secondAttribute="trailing" constant="-49" id="UEu-Xv-LiJ"/>
+                    <constraint firstItem="8vS-WN-a4M" firstAttribute="centerY" secondItem="fKf-BH-DDh" secondAttribute="centerY" id="Uu4-Sv-V4U"/>
+                    <constraint firstItem="8vS-WN-a4M" firstAttribute="leading" secondItem="fKf-BH-DDh" secondAttribute="trailing" constant="1" id="WmQ-R6-al3"/>
+                    <constraint firstItem="RMV-3m-EVu" firstAttribute="top" secondItem="Tl7-WY-WSF" secondAttribute="bottom" constant="4" id="cDy-pm-7Vv"/>
+                    <constraint firstItem="G57-0q-5DU" firstAttribute="leading" secondItem="fKf-BH-DDh" secondAttribute="leading" id="fTq-uX-4Rc"/>
+                    <constraint firstItem="DRS-ZP-Qf3" firstAttribute="centerY" secondItem="Tl7-WY-WSF" secondAttribute="centerY" id="kVy-1A-zlU"/>
+                    <constraint firstItem="S0T-3j-e8r" firstAttribute="top" secondItem="o1v-WW-EUk" secondAttribute="top" constant="35" id="rLg-ln-Wci"/>
+                    <constraint firstItem="gCw-0B-UVM" firstAttribute="leading" secondItem="veD-vc-BBJ" secondAttribute="trailing" constant="49" id="tuw-yc-q5M"/>
+                    <constraint firstItem="Tl7-WY-WSF" firstAttribute="centerY" secondItem="fKf-BH-DDh" secondAttribute="centerY" id="ynU-H2-LzB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="joinMaxLabel" destination="fKf-BH-DDh" id="tAJ-nU-1md"/>
+                <outlet property="joinmaxTimeLabel" destination="G57-0q-5DU" id="QhF-JF-hfu"/>
+                <outlet property="passMaxLabel" destination="Tl7-WY-WSF" id="tRY-5W-IP9"/>
+                <outlet property="passMaxTimeLabel" destination="RMV-3m-EVu" id="K8q-MV-nKV"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="-3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="分割线1" width="308" height="1"/>
+        <image name="经过最高" width="81" height="18"/>
+        <image name="进店最高" width="83" height="18"/>
+    </resources>
+</document>

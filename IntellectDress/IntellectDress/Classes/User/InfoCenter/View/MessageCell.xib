@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ClG-8v-IpV">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL" rowHeight="110" id="H4x-Vj-fQc" customClass="MessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H4x-Vj-fQc" id="E40-fW-kqN">
+                <frame key="frameInset" width="375" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_message_issee" translatesAutoresizingMaskIntoConstraints="NO" id="TSc-Hd-AzT">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="L3U-pg-Eeq"/>
+                            <constraint firstAttribute="width" constant="10" id="XQ8-QI-HIk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjW-qa-gbt">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbN-uU-oJd">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="W2o-6p-IjD">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W2o-6p-IjD" firstAttribute="top" secondItem="JbN-uU-oJd" secondAttribute="bottom" constant="4" id="4oS-54-R8L"/>
+                    <constraint firstItem="JbN-uU-oJd" firstAttribute="leading" secondItem="IjW-qa-gbt" secondAttribute="leading" id="7Cd-aT-9w4"/>
+                    <constraint firstItem="W2o-6p-IjD" firstAttribute="leading" secondItem="JbN-uU-oJd" secondAttribute="leading" id="7K5-8V-LrO"/>
+                    <constraint firstItem="TSc-Hd-AzT" firstAttribute="top" secondItem="E40-fW-kqN" secondAttribute="top" constant="20" id="DU8-81-rFn"/>
+                    <constraint firstItem="IjW-qa-gbt" firstAttribute="centerY" secondItem="TSc-Hd-AzT" secondAttribute="centerY" id="VUf-xO-9tn"/>
+                    <constraint firstItem="TSc-Hd-AzT" firstAttribute="leading" secondItem="E40-fW-kqN" secondAttribute="leading" constant="10" id="VsE-Um-Mzp"/>
+                    <constraint firstItem="IjW-qa-gbt" firstAttribute="leading" secondItem="TSc-Hd-AzT" secondAttribute="trailing" constant="8" id="hP5-m6-x9f"/>
+                    <constraint firstItem="JbN-uU-oJd" firstAttribute="top" secondItem="IjW-qa-gbt" secondAttribute="bottom" constant="4" id="mXg-yr-DwA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="W2o-6p-IjD" id="Aqi-l5-MNb"/>
+                <outlet property="messageTitleLabel" destination="IjW-qa-gbt" id="scp-5Y-j5R"/>
+                <outlet property="timeLabel" destination="JbN-uU-oJd" id="XLH-lm-MDh"/>
+                <outlet property="unreadMessage" destination="TSc-Hd-AzT" id="Lt2-6v-0WV"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_message_issee" width="9" height="9"/>
+    </resources>
+</document>

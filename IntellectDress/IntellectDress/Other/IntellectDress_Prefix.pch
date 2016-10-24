@@ -1,0 +1,76 @@
+//
+//  IntellectDress_Prefix.pch
+//  IntellectDress
+//
+//  Created by 房 臻 on 16/9/6.
+//  Copyright © 2016年 zerom-FZ. All rights reserved.
+//
+
+#ifndef IntellectDress_Prefix_pch
+#define IntellectDress_Prefix_pch
+
+#import <Foundation/Foundation.h>
+typedef void (^CallBack) (BOOL isError,NSDictionary* json);
+/**********************       此处添加相关头文件    *************************/
+#import <UIKit/UIKit.h>
+#import "MainViewController.h"
+#import "UIImage+DY.h"
+#import "MBProgressHUD.h"
+#import "SVProgressHUD.h"
+#import "WebViewController.h"
+#import "UserBiz.h"
+#import "CountDownButton.h"
+#import "MessageBiz.h"
+#import "Photo.h"
+#import "PNChart.h"
+#import "YCXMenu.h"
+#import "DataGridComponent.h"
+#import "ZRNetWorkTool.h"
+#import "ZRNetWorkTool2.h"
+#import "AFNetworking.h"
+#import "HZQDatePickerView.h"//日历
+#import "ZRMBProgressHUDTool.h"
+#import "AnalyseAjax.h"
+#import "HomeAjax.h"
+#import "InfoCenterAjax.h"
+#import "MemoAjax.h"
+#import "UIColor+colorChange.h"
+#import "UserManagerAjax.h"
+#import "FocusAjax.h"
+/**********************       此处添加相关头文件  ****************************/
+
+
+
+
+
+/*******************           此处添加相关属性   *******************************/
+#define MainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MainScreenHeight [UIScreen mainScreen].bounds.size.height
+#define RGB(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]//
+#define defaultColor [UIColor colorWithRed:80/255.0 green:206/255.0 blue:214/255.0 alpha:1] //默认的颜色(茶绿)
+#define defaultFont [UIFont fontWithName:@"MicrosoftYaHei" size:14.0f];//默认的字体样式(微软雅黑)
+#define defaultBtnTitleColor [UIColor colorWithRed:186/255.0 green:251/255.0 blue:255/255.0 alpha:1]//默认的按钮字体颜色
+#define labelColor102 [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]//字体颜色为102 102 102
+#define CornerRadius 5//按钮圆角
+#define BarChartBlue [UIColor colorWithRed:116/255.0 green:216/255.0 blue:222/255.0 alpha:1]//圆柱表格的柱子颜色
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:1]
+
+
+/************************        此处添加相关属性      ***************************/
+
+
+
+
+
+#endif /* IntellectDress_Prefix_pch */
+#ifdef __OBJC__
+#import "Commons.h"
+#import "Masonry.h"
+#import "UserBiz.h"
+#define GlobalTintColor UICOLOR(80, 206, 214, 1)
+#define APP_URL_BASE @"http://api.ba-mgt.com/"
+#define APP_BASE_URL @"http://a.ba-mgt.com/api/"
+#endif

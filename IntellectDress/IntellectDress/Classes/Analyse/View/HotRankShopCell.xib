@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hotRankShopCell" rowHeight="70" id="bW2-lm-xNx" customClass="HotRankShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bW2-lm-xNx" id="THr-l9-1Ho">
+                <frame key="frameInset" width="375" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ek-2L-F4k">
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.9191721907" green="0.60004308760000002" blue="0.38063529880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="素材" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-fy-GQz">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="1hg-LD-UKq"/>
+                            <constraint firstAttribute="width" constant="49" id="rmB-Gr-sjU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="复古白色豹纹雪纺衬衫百搭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tF-Fd-6U3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Ml7-Bx-0cV"/>
+                            <constraint firstAttribute="width" constant="178" id="kPX-gQ-NTt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编号：236545123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-Sk-Axb">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Qo1-zQ-gbn"/>
+                            <constraint firstAttribute="width" constant="105" id="udo-7w-Qld"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格：￥299" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-bc-nU3">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="qte-1j-fJR">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="fZ6-3m-mYP"/>
+                            <constraint firstAttribute="width" constant="70" id="qbY-X2-jhn"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.41176470590000003" green="0.78039215689999997" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEg-Xm-idT">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.41176470590000003" green="0.78039215689999997" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Ek-2L-F4k" firstAttribute="centerY" secondItem="THr-l9-1Ho" secondAttribute="centerY" id="5us-Co-Z6w"/>
+                    <constraint firstItem="CnY-fy-GQz" firstAttribute="leading" secondItem="9Ek-2L-F4k" secondAttribute="trailing" constant="11" id="9ls-fQ-ff8"/>
+                    <constraint firstItem="9tF-Fd-6U3" firstAttribute="top" secondItem="THr-l9-1Ho" secondAttribute="top" constant="17" id="AXy-Nt-f7W"/>
+                    <constraint firstItem="9tF-Fd-6U3" firstAttribute="leading" secondItem="CnY-fy-GQz" secondAttribute="trailing" constant="9" id="HTJ-iH-KvL"/>
+                    <constraint firstItem="GEg-Xm-idT" firstAttribute="trailing" secondItem="qte-1j-fJR" secondAttribute="trailing" id="HpE-DD-fXq"/>
+                    <constraint firstItem="Um5-Sk-Axb" firstAttribute="top" secondItem="9tF-Fd-6U3" secondAttribute="bottom" constant="11" id="Nsw-zB-95Y"/>
+                    <constraint firstItem="nx1-bc-nU3" firstAttribute="leading" secondItem="Um5-Sk-Axb" secondAttribute="trailing" constant="17" id="Qav-fg-yb0"/>
+                    <constraint firstItem="CnY-fy-GQz" firstAttribute="centerY" secondItem="THr-l9-1Ho" secondAttribute="centerY" id="YBk-8I-OxS"/>
+                    <constraint firstItem="qte-1j-fJR" firstAttribute="top" secondItem="GEg-Xm-idT" secondAttribute="bottom" constant="4" id="cOh-In-KYo"/>
+                    <constraint firstAttribute="trailing" secondItem="qte-1j-fJR" secondAttribute="trailing" constant="9" id="dz5-Ww-lgJ"/>
+                    <constraint firstItem="qte-1j-fJR" firstAttribute="centerY" secondItem="CnY-fy-GQz" secondAttribute="centerY" id="emt-GD-12Z"/>
+                    <constraint firstItem="Um5-Sk-Axb" firstAttribute="leading" secondItem="9tF-Fd-6U3" secondAttribute="leading" id="frg-kc-cwf"/>
+                    <constraint firstItem="9Ek-2L-F4k" firstAttribute="leading" secondItem="THr-l9-1Ho" secondAttribute="leading" constant="8" id="sDQ-fi-KJy"/>
+                    <constraint firstItem="nx1-bc-nU3" firstAttribute="centerY" secondItem="Um5-Sk-Axb" secondAttribute="centerY" id="xDk-Fd-bPS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="progressPercentLabel" destination="GEg-Xm-idT" id="xDJ-pp-WPZ"/>
+                <outlet property="rankNumLabel" destination="9Ek-2L-F4k" id="n5d-Zm-gBv"/>
+                <outlet property="shopImage" destination="CnY-fy-GQz" id="Wpl-wW-2Bi"/>
+                <outlet property="shopNameLabel" destination="9tF-Fd-6U3" id="hO3-zy-aaR"/>
+                <outlet property="shopNumLabel" destination="Um5-Sk-Axb" id="g22-0K-1BN"/>
+                <outlet property="shopPriceLabel" destination="nx1-bc-nU3" id="PQ2-oC-sc9"/>
+                <outlet property="shopProgressView" destination="qte-1j-fJR" id="EhP-W2-RwK"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="素材" width="65" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="U55-Yr-0kR" customClass="DeviceCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U55-Yr-0kR" id="CMe-2G-zaL">
+                <frame key="frameInset" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVVV-进店-D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQR-VB-Mzh">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1232542213222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-gM-AN8">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M6-JW-bby">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.80321498690000004" green="0.13213581669999999" blue="0.1915316588" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0M6-JW-bby" firstAttribute="centerY" secondItem="CMe-2G-zaL" secondAttribute="centerY" id="60Q-Dc-ZMn"/>
+                    <constraint firstItem="eQR-VB-Mzh" firstAttribute="leading" secondItem="CMe-2G-zaL" secondAttribute="leading" constant="19" id="SKe-gD-T2a"/>
+                    <constraint firstItem="4PZ-gM-AN8" firstAttribute="leading" secondItem="eQR-VB-Mzh" secondAttribute="leading" id="Yhh-l8-dGL"/>
+                    <constraint firstItem="eQR-VB-Mzh" firstAttribute="top" secondItem="CMe-2G-zaL" secondAttribute="top" constant="16" id="eGn-wK-oeW"/>
+                    <constraint firstAttribute="trailing" secondItem="0M6-JW-bby" secondAttribute="trailing" constant="27" id="vwW-V2-uq9"/>
+                    <constraint firstItem="4PZ-gM-AN8" firstAttribute="top" secondItem="eQR-VB-Mzh" secondAttribute="bottom" id="yTi-TB-Nc1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviceName" destination="eQR-VB-Mzh" id="TIg-Of-4AJ"/>
+                <outlet property="deviceNum" destination="4PZ-gM-AN8" id="X0e-aV-BIv"/>
+                <outlet property="deviceState" destination="0M6-JW-bby" id="BOA-wC-Pb0"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="-11"/>
+        </tableViewCell>
+    </objects>
+</document>

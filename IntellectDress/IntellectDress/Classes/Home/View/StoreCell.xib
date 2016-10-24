@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="storeCell" rowHeight="47" id="hnM-08-bhq" customClass="StoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hnM-08-bhq" id="FEw-Yw-8cr">
+                <frame key="frameInset" width="375" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store拷贝5" translatesAutoresizingMaskIntoConstraints="NO" id="tAF-RC-fYi">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="8ot-Qh-fFi"/>
+                            <constraint firstAttribute="height" constant="20" id="F2H-6z-4Gm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MS天堂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxg-N7-RRB">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="√-" translatesAutoresizingMaskIntoConstraints="NO" id="HlL-oG-wea"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分割线1" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-ER-iwC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Hvt-VF-9RQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fxg-N7-RRB" firstAttribute="centerY" secondItem="tAF-RC-fYi" secondAttribute="centerY" id="8O0-sH-jPu"/>
+                    <constraint firstAttribute="trailing" secondItem="bEL-ER-iwC" secondAttribute="trailing" id="946-Hn-yxM"/>
+                    <constraint firstItem="HlL-oG-wea" firstAttribute="centerY" secondItem="fxg-N7-RRB" secondAttribute="centerY" id="Eqy-ls-ujg"/>
+                    <constraint firstAttribute="trailing" secondItem="HlL-oG-wea" secondAttribute="trailing" constant="15" id="Rzz-9T-tUF"/>
+                    <constraint firstItem="fxg-N7-RRB" firstAttribute="leading" secondItem="tAF-RC-fYi" secondAttribute="trailing" constant="17" id="Sqh-Ax-rwS"/>
+                    <constraint firstItem="tAF-RC-fYi" firstAttribute="top" secondItem="FEw-Yw-8cr" secondAttribute="top" constant="15" id="TqA-nl-wD0"/>
+                    <constraint firstItem="bEL-ER-iwC" firstAttribute="leading" secondItem="FEw-Yw-8cr" secondAttribute="leading" id="k9r-79-ZL4"/>
+                    <constraint firstAttribute="bottom" secondItem="bEL-ER-iwC" secondAttribute="bottom" id="qKb-YU-14d"/>
+                    <constraint firstItem="tAF-RC-fYi" firstAttribute="leading" secondItem="FEw-Yw-8cr" secondAttribute="leading" constant="21" id="uQ6-UL-gJT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choseBtn" destination="HlL-oG-wea" id="Ip2-eh-Agy"/>
+                <outlet property="title" destination="fxg-N7-RRB" id="Wb5-0W-m1N"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="-24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="store拷贝5" width="21" height="19"/>
+        <image name="√-" width="26" height="17"/>
+        <image name="分割线1" width="308" height="1"/>
+    </resources>
+</document>

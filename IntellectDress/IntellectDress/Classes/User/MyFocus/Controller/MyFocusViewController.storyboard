@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Focus View Controller-->
+        <scene sceneID="3g4-1s-X7J">
+            <objects>
+                <viewController storyboardIdentifier="MyFocusViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vBv-H5-8Li" customClass="MyFocusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FK5-p1-XWv"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLr-Mw-YBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I0d-MT-u9E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsn-e0-Rg0" userLabel="navigationView">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYw-B8-VDr" userLabel="编辑">
+                                        <state key="normal" image="ico_memo_edit_delete"/>
+                                        <connections>
+                                            <action selector="editBtnClick:" destination="vBv-H5-8Li" eventType="touchUpInside" id="ZFy-Ey-yfi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu8-FT-T0o" userLabel="back">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="gIR-f0-bDv"/>
+                                            <constraint firstAttribute="width" constant="30" id="pIn-O1-0hu"/>
+                                        </constraints>
+                                        <state key="normal" image="back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnClick:" destination="vBv-H5-8Li" eventType="touchUpInside" id="lgY-vd-cVa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.80784313730000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SYw-B8-VDr" secondAttribute="trailing" constant="8" id="FfY-6Y-ojm"/>
+                                    <constraint firstItem="SYw-B8-VDr" firstAttribute="centerY" secondItem="Zu8-FT-T0o" secondAttribute="centerY" id="RLO-bY-AXK"/>
+                                    <constraint firstItem="Zu8-FT-T0o" firstAttribute="leading" secondItem="lsn-e0-Rg0" secondAttribute="leading" constant="5" id="Z0h-1m-nI8"/>
+                                    <constraint firstAttribute="height" constant="64" id="gs5-98-I2X"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zu8-FT-T0o" secondAttribute="bottom" constant="10" id="v8H-cF-sCw"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KCk-1i-Vxm">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmv-EL-kwZ" userLabel="BottomView">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aI-xN-yfd">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="im6-Nf-zsw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="全选" image="O">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="√"/>
+                                        <connections>
+                                            <action selector="allSelectedBtnClick:" destination="vBv-H5-8Li" eventType="touchUpInside" id="zV4-Ck-bwl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1g-sS-5i5">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="rNK-vr-LiO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="删除" image="删除-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0aI-xN-yfd" firstAttribute="leading" secondItem="Mmv-EL-kwZ" secondAttribute="leading" constant="63" id="2Zr-7Y-DRa"/>
+                                    <constraint firstAttribute="height" constant="49" id="F2N-tY-xN4"/>
+                                    <constraint firstItem="0aI-xN-yfd" firstAttribute="centerY" secondItem="Mmv-EL-kwZ" secondAttribute="centerY" id="J0l-c4-GBv"/>
+                                    <constraint firstAttribute="trailing" secondItem="C1g-sS-5i5" secondAttribute="trailing" constant="63" id="gSQ-kd-9j2"/>
+                                    <constraint firstItem="C1g-sS-5i5" firstAttribute="centerY" secondItem="0aI-xN-yfd" secondAttribute="centerY" id="oOe-Xt-WCI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KCk-1i-Vxm" firstAttribute="leading" secondItem="I0d-MT-u9E" secondAttribute="leading" id="0Gz-6g-2dE"/>
+                            <constraint firstAttribute="trailing" secondItem="Mmv-EL-kwZ" secondAttribute="trailing" id="3s6-fd-cuD"/>
+                            <constraint firstItem="lsn-e0-Rg0" firstAttribute="leading" secondItem="I0d-MT-u9E" secondAttribute="leading" id="5iR-mS-SXm"/>
+                            <constraint firstAttribute="trailing" secondItem="KCk-1i-Vxm" secondAttribute="trailing" id="CEA-fJ-ze1"/>
+                            <constraint firstItem="Mmv-EL-kwZ" firstAttribute="leading" secondItem="I0d-MT-u9E" secondAttribute="leading" id="IgK-8y-YQ6"/>
+                            <constraint firstAttribute="trailing" secondItem="lsn-e0-Rg0" secondAttribute="trailing" id="IgQ-pv-h7k"/>
+                            <constraint firstItem="KCk-1i-Vxm" firstAttribute="top" secondItem="lsn-e0-Rg0" secondAttribute="bottom" id="RpY-47-U4g"/>
+                            <constraint firstItem="lsn-e0-Rg0" firstAttribute="top" secondItem="I0d-MT-u9E" secondAttribute="top" id="U8X-Vb-kxe"/>
+                            <constraint firstItem="RLr-Mw-YBR" firstAttribute="top" secondItem="KCk-1i-Vxm" secondAttribute="bottom" id="VBf-3i-dye"/>
+                            <constraint firstItem="RLr-Mw-YBR" firstAttribute="top" secondItem="Mmv-EL-kwZ" secondAttribute="bottom" id="tdr-vM-SDK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allSelectedBtn" destination="0aI-xN-yfd" id="vYD-VX-SIA"/>
+                        <outlet property="bottomView" destination="Mmv-EL-kwZ" id="7fG-Pr-YBa"/>
+                        <outlet property="tableView" destination="KCk-1i-Vxm" id="cFA-pE-qjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSu-Un-ab4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="O" width="14" height="14"/>
+        <image name="back" width="17" height="17"/>
+        <image name="ico_memo_edit_delete" width="29" height="20"/>
+        <image name="√" width="14" height="14"/>
+        <image name="删除-" width="18" height="19"/>
+    </resources>
+</document>
