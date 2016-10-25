@@ -24,6 +24,7 @@
  *  滚动view
  */
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+//左边button
 @property (weak, nonatomic) IBOutlet UIButton *leftBtn1;
 @property (weak, nonatomic) IBOutlet UIButton *rightBtn1;
 /**
